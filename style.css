@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+.hero-section {
+    background: url("hero-section-bg.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+.nav-icons ul li{
+    position: relative;
+}
+.nav-icons ul li::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    bottom: -3px;
+    background-color: skyblue;
+    left: 50%;
+    transition: width .6s ease-in-out,left .6s ease-in-out;
+}
+
+.nav-icons ul li:hover::after{
+    width: 100%;
+    left: 0%;
+
+}
+.nav-icons ul li a:hover{
+    color: white;
+
+}
+.progress-card .progress-bar-design,.progress-bar-html,.progress-bar-css,.progress-bar-word,.progress-bar-bootstrap{
+    position: relative;
+}
+
+.progress-card .progress-bar-design::before{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    background: gray;
+    border-radius: 12px;
+    border: 2px solid rgb(201, 201, 201);
+}
+.progress-card .progress-bar-design::after{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    width: 80%;
+    height: 4px;
+    left: 0;
+    background: rgb(72, 150, 72);
+    border-radius: 12px;
+    border: 2px solid rgb(72, 150, 72);
+}
+.progress-card .progress-bar-html::before{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    background: gray;
+    border-radius: 12px;
+    border: 2px solid rgb(201, 201, 201);
+}
+.progress-card .progress-bar-html::after{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    width: 90%;
+    height: 4px;
+    left: 0;
+    background: rgb(72, 150, 72);
+    border-radius: 12px;
+    border: 2px solid rgb(72, 150, 72);
+}
+.progress-card .progress-bar-css::before{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    background: gray;
+    border-radius: 12px;
+    border: 2px solid rgb(201, 201, 201);
+}
+.progress-card .progress-bar-css::after{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    width: 60%;
+    height: 4px;
+    left: 0;
+    background: rgb(72, 150, 72);
+    border-radius: 12px;
+    border: 2px solid rgb(72, 150, 72);
+}
+.progress-card .progress-bar-word::before{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    background: gray;
+    border-radius: 12px;
+    border: 2px solid rgb(201, 201, 201);
+}
+.progress-card .progress-bar-word::after{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    width: 20%;
+    height: 4px;
+    left: 0;
+    background: rgb(72, 150, 72);
+    border-radius: 12px;
+    border: 2px solid rgb(72, 150, 72);
+}
+.progress-card .progress-bar-bootstrap::before{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    background: gray;
+    border-radius: 12px;
+    border: 2px solid rgb(201, 201, 201);
+}
+.progress-card .progress-bar-bootstrap::after{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    width: 20%;
+    height: 4px;
+    left: 0;
+    background: rgb(72, 150, 72);
+    border-radius: 12px;
+    border: 2px solid rgb(72, 150, 72);
+}
