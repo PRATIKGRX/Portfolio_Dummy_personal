@@ -20,7 +20,7 @@
     width: 0%;
     height: 3px;
     bottom: -3px;
-    background-color: skyblue;
+    background-color: black;
     left: 50%;
     transition: width .6s ease-in-out,left .6s ease-in-out;
 }
@@ -34,117 +34,190 @@
     color: white;
 
 }
-.progress-card .progress-bar-design,.progress-bar-html,.progress-bar-css,.progress-bar-word,.progress-bar-bootstrap{
+.progress-card .progress-bar-design{
     position: relative;
+    height: 6px;
+    top: 6px;
+    width: 100%;
+    background: #f1f1f1;
+    border-radius: 6px;
+    border: 1px solid rgb(201, 201, 201);
 }
-
 .progress-card .progress-bar-design::before{
     position: absolute;
     content: "";
-    bottom: -5px;
-    width: 100%;
-    height: 4px;
+    height: 100%;
+    width: 80%;
     left: 0;
-    background: gray;
-    border-radius: 12px;
-    border: 2px solid rgb(201, 201, 201);
+    background: rgb(136, 255, 136);
+    border-radius: 6px;
 }
-.progress-card .progress-bar-design::after{
+.progress-card .progress-bar-design .progress-icon{
+    position: absolute;
+    left: 77%;
+    top: 16px;
+    background: rgb(136, 255, 136);
+    padding: 1px 4px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.progress-card .progress-bar-design .progress-icon::before{
     position: absolute;
     content: "";
-    bottom: -5px;
-    width: 80%;
-    height: 4px;
-    left: 0;
-    background: rgb(72, 150, 72);
-    border-radius: 12px;
-    border: 2px solid rgb(72, 150, 72);
+    height: 20px;
+    width: 20px;
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+    background: rgb(136, 255, 136);
+    border-radius: 4px;
+    top: -14px;
+}
+.progress-card .progress-bar-html{
+    position: relative;
+    height: 6px;
+    top: 6px;
+    width: 100%;
+    background: #f1f1f1;
+    border-radius: 6px;
+    border: 1px solid rgb(201, 201, 201);
 }
 .progress-card .progress-bar-html::before{
     position: absolute;
     content: "";
-    bottom: -5px;
-    width: 100%;
-    height: 4px;
+    height: 100%;
+    width: 90%;
     left: 0;
-    background: gray;
-    border-radius: 12px;
-    border: 2px solid rgb(201, 201, 201);
+    background: rgb(136, 255, 136);
+    border-radius: 6px;
 }
-.progress-card .progress-bar-html::after{
+.progress-card .progress-bar-html .progress-icon{
+    position: absolute;
+    left: 87%;
+    top: 16px;
+    background: rgb(136, 255, 136);
+    padding: 1px 4px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.progress-card .progress-bar-html .progress-icon::before{
     position: absolute;
     content: "";
-    bottom: -5px;
-    width: 90%;
-    height: 4px;
-    left: 0;
-    background: rgb(72, 150, 72);
-    border-radius: 12px;
-    border: 2px solid rgb(72, 150, 72);
+    height: 20px;
+    width: 20px;
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+    background: rgb(136, 255, 136);
+    border-radius: 4px;
+    top: -14px;
+}
+.progress-card .progress-bar-css{
+    position: relative;
+    height: 6px;
+    top: 6px;
+    width: 100%;
+    background: #f1f1f1;
+    border-radius: 6px;
+    border: 1px solid rgb(201, 201, 201);
 }
 .progress-card .progress-bar-css::before{
     position: absolute;
     content: "";
-    bottom: -5px;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    background: rgb(136, 255, 136);
+    border-radius: 6px;
+}
+.progress-card .progress-bar-css .progress-icon{
+    position: absolute;
+    left: 77%;
+    top: 16px;
+    background: rgb(136, 255, 136);
+    padding: 1px 4px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.progress-card .progress-bar-css .progress-icon::before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+    background: rgb(136, 255, 136);
+    border-radius: 4px;
+    top: -14px;
+}
+.progress-card .progress-bar-js{
+    position: relative;
+    height: 6px;
+    top: 6px;
     width: 100%;
-    height: 4px;
-    left: 0;
-    background: gray;
-    border-radius: 12px;
-    border: 2px solid rgb(201, 201, 201);
+    background: #f1f1f1;
+    border-radius: 6px;
+    border: 1px solid rgb(201, 201, 201);
 }
-.progress-card .progress-bar-css::after{
+.progress-card .progress-bar-js::before{
     position: absolute;
     content: "";
-    bottom: -5px;
-    width: 60%;
-    height: 4px;
-    left: 0;
-    background: rgb(72, 150, 72);
-    border-radius: 12px;
-    border: 2px solid rgb(72, 150, 72);
-}
-.progress-card .progress-bar-word::before{
-    position: absolute;
-    content: "";
-    bottom: -5px;
-    width: 100%;
-    height: 4px;
-    left: 0;
-    background: gray;
-    border-radius: 12px;
-    border: 2px solid rgb(201, 201, 201);
-}
-.progress-card .progress-bar-word::after{
-    position: absolute;
-    content: "";
-    bottom: -5px;
+    height: 100%;
     width: 20%;
-    height: 4px;
     left: 0;
-    background: rgb(72, 150, 72);
-    border-radius: 12px;
-    border: 2px solid rgb(72, 150, 72);
+    background: rgb(136, 255, 136);
+    border-radius: 6px;
 }
-.progress-card .progress-bar-bootstrap::before{
+.progress-card .progress-bar-js .progress-icon{
+    position: absolute;
+    left: 17%;
+    top: 16px;
+    background: rgb(136, 255, 136);
+    padding: 1px 4px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.progress-card .progress-bar-js .progress-icon::before{
     position: absolute;
     content: "";
-    bottom: -5px;
+    height: 20px;
+    width: 20px;
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+    background: rgb(136, 255, 136);
+    border-radius: 4px;
+    top: -14px;
+}
+.fixedPosition{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: black !important;
+    background-color: white;
+    box-shadow: 0 3px 7px rgb(68, 68, 68);
+    animation: slideDown .4s ease-out forwards !important;
+}
+@keyframes slideDown{
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.gallery {
+    column-count: 3;
+    column-gap: 10px;
+}
+
+.gallery img {
     width: 100%;
-    height: 4px;
-    left: 0;
-    background: gray;
-    border-radius: 12px;
-    border: 2px solid rgb(201, 201, 201);
+    display: block;
+    margin-bottom: 10px;
 }
-.progress-card .progress-bar-bootstrap::after{
+.client-sec-msg::before{
     position: absolute;
     content: "";
-    bottom: -5px;
-    width: 20%;
-    height: 4px;
-    left: 0;
-    background: rgb(72, 150, 72);
-    border-radius: 12px;
-    border: 2px solid rgb(72, 150, 72);
+    background: oklch(0.709 0.01 56.259);
+    clip-path: polygon(100% 14%, 0 0, 100% 94%);
+    height: 20px;
+    width: 20px;
+    top: 18px;
+    left: -18px;
+    border:none;
 }
