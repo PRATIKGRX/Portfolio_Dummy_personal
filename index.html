@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/14b616764f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 
@@ -18,19 +19,37 @@
     <header>
         <nav class="absolute top-0 px-[7rem] z-10 left-0 right-0 h-[4rem] py-[1.25rem] text-white" id="navBar">
             <div class="flex justify-between items-center">
+                    <div class="flex">
+                        <i class="fa-solid fa-p"></i><i class="fa-solid fa-g"></i>
+                    </div>
+                <div class="nav-icons">
+                    <ul class="flex gap-8 text-sm">
+                        <li class="black"><a href="#heroSec" class="">Home</a></li>
+                        <li class="black"><a href="#aboutSec" class="text-stone-300">About</a></li>
+                        <li class="black"><a href="#portfolioSec" class="text-stone-300">Portfolio</a></li>
+                        <li class="black"><a href="#serviceSec" class="text-stone-300">Services</a></li>
+                        <li class="black"><a href="#resumeSec" class="text-stone-300">Resume</a></li>
+                        <li class="black"><a href="#blogSec" class="text-stone-300">Blog</a></li>
+                        <li class="black"><a href="#contactSec" class="text-stone-300">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="absolute top-0 px-[7rem] z-10 left-0 right-0 h-[4rem] py-[1.25rem] text-white" id="smallNav">
+            <div class="flex justify-between items-center">
                 <div class="l">
                     <i class="fa-solid fa-p"></i><i class="fa-solid fa-g"></i>
                 </div>
                 <div class="nav-icons">
+                    <i class="fa-solid fa-bars"></i>
                     <ul class="flex gap-8 text-sm">
-                        <li><a href="" class="">Home</a></li>
-                        <li><a href="" class="text-stone-300">DropDown</a></li>
-                        <li><a href="" class="text-stone-300">About</a></li>
-                        <li><a href="" class="text-stone-300">Portfolio</a></li>
-                        <li><a href="" class="text-stone-300">Services</a></li>
-                        <li><a href="" class="text-stone-300">Resume</a></li>
-                        <li><a href="" class="text-stone-300">Blog</a></li>
-                        <li><a href="" class="text-stone-300">Contact</a></li>
+                        <li class="black"><a href="" class="">Home</a></li>
+                        <li class="black"><a href="" class="text-stone-300">About</a></li>
+                        <li class="black"><a href="#portfolioSec" class="text-stone-300">Portfolio</a></li>
+                        <li class="black"><a href="#serviceSec" class="text-stone-300">Services</a></li>
+                        <li class="black"><a href="#resumeSec" class="text-stone-300">Resume</a></li>
+                        <li class="black"><a href="#blogSec" class="text-stone-300">Blog</a></li>
+                        <li class="black"><a href="#contactSec" class="text-stone-300">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,11 +57,11 @@
         <section class="relative h-screen px-[7rem] flex items-center justify-center hero-section text-white"
             id="heroSec">
             <div>
-                <h1 class="text-center text-5xl font-bold mb-4">I'm Praik Gurung<br>A Front-End-Developer</h1>
-                <p class="text-center text-lg font-medium">Description About links</p>
+                <h1 class=" fade-in-left text-center text-5xl font-bold mb-4">I'm Praik Gurung<br>A Front-End-Developer</h1>
+                <p class="text-center text-lg font-medium">As a passionate front-end developer, I'm always eager to explore new technologies and continuously challenge myself to stay ahead of the curve. Curiosity fuels my creativity, and I'm always active in turning ideas into seamless, interactive web experiences.</p>
             </div>
         </section>
-        <section class="px-[7rem] py-[5rem]">
+        <section class="px-[7rem] py-[5rem]" id="aboutSec">
             <div class="grid grid-cols-[1fr_.7fr] gap-[5rem]">
                 <div class="bg-red-500">
 
@@ -50,18 +69,12 @@
                 <div class="grid grid-row-[55%_40%] gap-8 items-center">
                     <div>
                         <h2 class="text-5xl mb-4">My Bio</h2>
-                        <p class="text-lg mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus qui
-                            incidunt laboriosam suscipit itaque, eligendi, saepe,</p>
-                        <p class="text-lg ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
-                            possimus libero modi corrupti quia nulla voluptas esse ratione!</p>
+                        <p class="text-lg mb-3">Hello World,I'm Pratik Grx, a dedicated front-end developer with a strong passion for learning and growth. I specialize in creating intuitive, user-friendly interfaces and seamless web experiences. With a keen curiosity for exploring new technologies, </p>
+                        <p class="text-lg ">I'm always seeking to expand my skills and stay up-to-date with the latest trends in web development. Whether I'm coding, designing, or experimenting with new frameworks, I'm always active and excited about bringing ideas to life on the web.</p>
                     </div>
                     <div class="mb-8 progress-card">
-                        <h3 class="text-xl mb-10 relative">Design <div class="progress-bar-design"><span
-                                    class="progress-icon">80%</span></div>
-                        </h3>
-                        <div></div>
-                        <h3 class="text-xl mb-10 relative">Html <div class="progress-bar-html"><span
-                                    class="progress-icon">90%</span></div>
+                        <h3 class="text-xl mb-10 relative">Html 5 <div class="progress-bar-html"><span
+                                    class="progress-icon">75%</span></div>
                         </h3>
                         <div></div>
                         <h3 class="text-xl mb-10 relative">CSS <div class="progress-bar-css"><span
@@ -69,13 +82,15 @@
                         </h3>
                         <div></div>
                         <h3 class="text-xl mb-10 relative">JS <div class="progress-bar-js"><span
-                                    class="progress-icon">20%</span></div>
+                                    class="progress-icon">13%</span></div>
                         </h3>
                         <div></div>
                     </div>
-                    <div class="text-white">
-                        <button class="bg-red-500 px-7 py-3 rounded-full">Hire Me</button>
-                        <button class="bg-red-500 px-7 py-3 rounded-full">Download CV</button>
+                    <div class="">
+                        <button class="border-2 border-[#504B38] text-[#504B38] px-7 py-3 rounded-full transition-all duration-[600ms] 
+                        hover:bg-[#504B38] hover:text-white"><p class="">Hire Me</p></button>
+                        <button class="border-2 border-[#504B38] text-[#504B38] px-7 py-3 rounded-full transition-all duration-[600ms] 
+                        hover:bg-[#504B38] hover:text-white "><p class="">Download CV</p></button>
                     </div>
                 </div>
             </div>
@@ -83,7 +98,7 @@
 
     </header>
     <main>
-        <section class="px-[7rem] py-[5rem]">
+        <section class="px-[7rem] py-[5rem]" id="portfolioSec">
             <h2 class="text-5xl text-center mb-8">My Portfolio</h2>
             <div class="px-[18rem] mb-8">
                 <div class="grid grid-cols-5 justify-center text-stone-400">
@@ -95,120 +110,107 @@
                 </div>
             </div>
             <div class="gallery">
+                <img src="sky.jpg" alt="">
+                <img src="art.jpg" alt="">
+                <img src="art1.jpg" alt="">
+                <img src="art3.jpg" alt="">
+                <img src="ocean.jpg" alt="">
+                <img src="ocean1.jpg" alt="">
+                <img src="ocean3.jpg" alt="">
+                <img src="pose.jpg" alt="">
+                <img src="poster.jpg" alt="">
+                <img src="poster2.jpg" alt="">
                 <img src="test.jpg" alt="">
-                <img src="test1.jpg" alt="">
-                <img src="test2.jpg" alt="">
-                <img src="test3.jpg" alt="">
-                <img src="test4.jpg" alt="">
-                <img src="test5.jpg" alt="">
 
             </div>
         </section>
-        <section class="px-[7rem] py-[5rem]">
+        <section class="px-[7rem] py-[5rem]" id="serviceSec">
             <h2 class="text-center text-5xl mb-8">Services</h2>
-            <div class="grid grid-cols-3 gap-8">
-                <div class="border border-black px-7 py-9">
+            <div class="grid grid-cols-3 gap-8 service-container">
+                <div class="border-2 border-[#504B38] rounded-md px-7 py-9 transition-all duration-[600ms] 
+                hover:bg-[#504B38] hover:text-white">
                     <div class="flex items-center justify-center">
                         <i class="fa-solid fa-desktop text-5xl"></i>
                     </div>
                     <h4 class="text-center text-xl mb-8">Development</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus eum in animi ipsum corrupti
-                        natus! Consequatur quasi quam a possimus sint beatae sit neque! Praesentium quaerat molestias
-                        officiis atque veritatis.</p>
+                    <p class="text-center">I specialize in crafting intuitive and visually appealing user interfaces, ensuring that your website is both user-friendly and aesthetically pleasing.</p>
                 </div>
-                <div class="border border-black px-7 py-9">
+                <div class="border-2 border-[#504B38] rounded-md py-9 transition-all duration-[600ms] 
+                hover:bg-[#504B38] hover:text-white">
                     <div class="flex items-center justify-center">
                         <i class="fa-solid fa-binoculars text-5xl"></i>
                     </div>
                     <h4 class="text-center text-xl mb-8">Design</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus eum in animi ipsum corrupti
-                        natus! Consequatur quasi quam a possimus sint beatae sit neque! Praesentium quaerat molestias
-                        officiis atque veritatis.</p>
+                    <p class="text-center">I create mobile-friendly and responsive web designs that ensure a seamless user experience across all devices, from desktops to smartphones.</p>
                 </div>
-                <div class="border border-black px-7 py-9">
+                <div class="border-2 border-[#504B38] px-7 py-9 rounded-md transition-all duration-[600ms] 
+                hover:bg-[#504B38] hover:text-white">
                     <div class="flex items-center justify-center">
-                        <i class="fa-solid fa-suitcase text-5xl"></i>
+                        <i class="fa-solid fa-microchip text-5xl"></i>
                     </div>
-                    <h4 class="text-center text-xl mb-8">eCommerce</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus eum in animi ipsum corrupti
-                        natus! Consequatur quasi quam a possimus sint beatae sit neque! Praesentium quaerat molestias
-                        officiis atque veritatis.</p>
+                    <h4 class="text-center text-xl mb-8">FrameWorks</h4>
+                    <p class="text-center">I build interactive and dynamic web applications using modern JavaScript and frameworks like React, Vue, or Angular to enhance functionality and performance.</p>
                 </div>
             </div>
         </section>
-        <section class="px-[7rem] py-[5rem]">
+        <section class="px-[7rem] py-[5rem]" id="resumeSec">
             <h1 class="text-center text-5xl">Resume</h1>
             <div class="grid grid-cols-[40%_60%]">
                 <div>
                     profile imgh
                 </div>
-                <div class="grid grid-row-[60%_40%]">
+                <div class="grid grid-row-[60%_40%] px-4 rounded-md border-2 border-[#504B38]">
                     <div>
                         <h3 class=" text-3xl my-6">Work Exprience</h3>
                         <div class="grid grid-row-4">
                             <div class="my-3">
                                 <div class="flex justify-between">
-                                    <h4>Senior Front End Developer</h4>
-                                    <h4>Full Time</h4>
+                                    <h4>Intern Front End Developer</h4>
+                                    <h4>Part Time</h4>
                                 </div>
                                 <div class="flex justify-between">
-                                    <div>
-                                        <p>Facebook,inc</p>
-                                        <p>San Francisco</p>
+                                    <div class="flex gap-4">
+                                        <p><i class="fa-regular fa-building"></i> Free Intern, <i class="fa-solid fa-calendar-days"></i> Chitwan,</p>
+                                        <p>Nepal</p>
                                     </div>
                                     <div>
-                                        <p>november 2019-Present</p>
+                                        <p><i class="fa-solid fa-calendar-days"></i>Jan-2025</p>
                                     </div>
                                 </div>
                             </div>
                             <hr>
                             <div class="my-3">
                                 <div class="flex justify-between">
-                                    <h4>Senior Front End Developer</h4>
-                                    <h4>Full Time</h4>
+                                    <h4>Intern Front End Developer</h4>
+                                    <h4>Part Time</h4>
                                 </div>
                                 <div class="flex justify-between">
-                                    <div>
-                                        <p>Facebook,inc</p>
-                                        <p>San Francisco</p>
+                                    <div class="flex gap-4">
+                                        <p><i class="fa-regular fa-building"></i> Free Intern, <i class="fa-solid fa-calendar-days"></i> Chitwan,</p>
+                                        <p>Nepal</p>
                                     </div>
                                     <div>
-                                        <p>november 2019-Present</p>
+                                        <p><i class="fa-solid fa-calendar-days"></i>Jan-2025</p>
                                     </div>
                                 </div>
                             </div>
                             <hr>
-                            <div class="my-3">
+                            <<div class="my-3">
                                 <div class="flex justify-between">
-                                    <h4>Senior Front End Developer</h4>
-                                    <h4>Full Time</h4>
+                                    <h4>Intern Front End Developer</h4>
+                                    <h4>Part Time</h4>
                                 </div>
                                 <div class="flex justify-between">
-                                    <div>
-                                        <p>Facebook,inc</p>
-                                        <p>San Francisco</p>
+                                    <div class="flex gap-4">
+                                        <p><i class="fa-regular fa-building"></i> Free Intern, <i class="fa-solid fa-calendar-days"></i> Chitwan,</p>
+                                        <p>Nepal</p>
                                     </div>
                                     <div>
-                                        <p>november 2019-Present</p>
+                                        <p><i class="fa-solid fa-calendar-days"></i>Jan-2025</p>
                                     </div>
                                 </div>
                             </div>
                             <hr>
-                            <div class="my-3">
-                                <div class="flex justify-between">
-                                    <h4>Senior Front End Developer</h4>
-                                    <h4>Full Time</h4>
-                                </div>
-                                <div class="flex justify-between">
-                                    <div>
-                                        <p>Facebook,inc</p>
-                                        <p>San Francisco</p>
-                                    </div>
-                                    <div>
-                                        <p>november 2019-Present</p>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <hr>
@@ -217,57 +219,63 @@
                             <div>
                                 <div class="flex justify-between mb-4">
                                     <div>
-                                        <h4>Bachelor isdnddfh</h4>
+                                        <h4>SEE</h4>
                                         <h4>
-                                            date
+                                            2022 AD
                                         </h4>
                                     </div>
-                                    <p>place</p>
+                                    <div class="text-right">
+                                        <p>Pashupati School</p>
+                                    <p>Npj,Nepal</p>
+                                    </div>
                                 </div>
                                 <div class="flex justify-between mb-4">
                                     <div>
-                                        <h4>Bachelor isdnddfh</h4>
+                                        <h4>+2</h4>
                                         <h4>
-                                            date
+                                            2024 AD
                                         </h4>
                                     </div>
-                                    <p>place</p>
+                                    <div class="text-right">
+                                        <p>Skyrider School</p>
+                                    <p>Chitwan,Nepal</p>
+                                    </div>
                                 </div>
                             </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="px-[7rem] py-[5rem]">
+        <section class="px-[7rem] py-[5rem]" id="blogSec">
             <h1 class="text-center text-5xl mb-8">Happy Clients</h1>
             <div class="grid grid-cols-2 gap-8">
                 <div class="flex justify-between gap-8">
-                    <div class="border rounded-full border-black h-8">img</div>
-                    <div class="px-4 py-4 rounded-md bg-stone-400 shadow-lg client-sec-msg relative">
+                    <img src="client.jpg" alt="" class="w-[70px] h-[70px] rounded-full aspect-square border-4 border-[#B9B28A]">
+                    <div class="px-4 py-4 rounded-md bg-[#EBE5C2] shadow-lg client-sec-msg relative">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam excepturi ullam dolor
                             doloremque dolorem, iure eius quis laborum odit. Harum sint quod unde, libero beatae facilis
                             rem ad officia!</p>
                     </div>
                 </div>
                 <div class="flex justify-between gap-8">
-                    <div class="border rounded-full border-black h-8">img</div>
-                    <div class="px-4 py-4 rounded-md bg-stone-400 shadow-lg client-sec-msg relative">
+                    <img src="client.jpg" alt="" class="w-[70px] h-[70px] rounded-full aspect-square border-4 border-[#B9B28A]">
+                    <div class="px-4 py-4 rounded-md bg-[#EBE5C2]  shadow-lg client-sec-msg relative">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam excepturi ullam dolor
                             doloremque dolorem, iure eius quis laborum odit. Harum sint quod unde, libero beatae facilis
                             rem ad officia!</p>
                     </div>
                 </div>
                 <div class="flex justify-between gap-8">
-                    <div class="border rounded-full border-black h-8">img</div>
-                    <div class="px-4 py-4 rounded-md bg-stone-400 shadow-lg client-sec-msg relative">
+                    <img src="client.jpg" alt="" class="w-[70px] h-[70px] rounded-full aspect-square border-4 border-[#B9B28A]">
+                    <div class="px-4 py-4 rounded-md bg-[#EBE5C2] shadow-lg client-sec-msg relative">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam excepturi ullam dolor
                             doloremque dolorem, iure eius quis laborum odit. Harum sint quod unde, libero beatae facilis
                             rem ad officia!</p>
                     </div>
                 </div>
                 <div class="flex justify-between gap-8">
-                    <div class="border rounded-full border-black h-8">img</div>
-                    <div class="px-4 py-4 rounded-md bg-stone-400 shadow-lg client-sec-msg relative">
+                    <img src="client.jpg" alt="" class="w-[70px] h-[70px] rounded-full aspect-square border-4 border-[#B9B28A]">
+                    <div class="px-4 py-4 rounded-md bg-[#EBE5C2] shadow-lg client-sec-msg relative">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam excepturi ullam dolor
                             doloremque dolorem, iure eius quis laborum odit. Harum sint quod unde, libero beatae facilis
                             rem ad officia!</p>
@@ -277,7 +285,92 @@
         </section>
     </main>
     <footer>
+        <section class="px-[7rem] py-[5rem] contact-section" id="contactSec">
+            <h1 class="text-center text-5xl">Contact Me</h1>
+            <div class="grid grid-cols-[50%_20%] justify-between gap-[50px] my-10">
+                <div>
+                    <form action="">
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label for="fname">
+                                    <p class="text-lg text-stone-500">First Name</p><br>
+                                    <input type="text" id="fname" class="text-lg w-full">
+                                </label>
+                            </div>
+                            <div>
+                                <label for="lname">
+                                    <p class="text-lg text-stone-500">Last Name</p><br>
+                                    <input type="text" name="" id="lname" class="text-lg w-full">
+                                </label>
+                            </div>
+                        </div>
+                        <label for="email">
+                            <p class="text-lg text-stone-500">Email Address</p><br>
+                            <input type="email" name="" id="email" class="text-lg w-full mb-4">
+                        </label>
+                        <label for="msg">
+                            <span class="text-lg text-green-500">Message: </span><br>
+                            <textarea name="" rows="8" id="msg" class="text-lg w-full mb-4"></textarea>
+                        </label>
+                        <button class="border px-3 py-4 bg-green-500 text-black rounded-md">Send Message</button>
+                    </form>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Info</h4>
+                    <p class="text-md mb-2"><i class="fa-solid fa-location-dot"></i> RatnaNagar-3,Tandi</p>
+                    <p class="text-md mb-2"><i class="fa-solid fa-phone"></i>=9777 48376378</p>
+                    <p class="text-md mb-2"><i class="fa-solid fa-envelope"></i>someone@gmail.com</p>
+                    <p class="text-md mb-2"><i class="fa-solid fa-globe"></i> www.flkjfjk</p>
+                </div>
 
+            </div>
+        </section>
+        <section class="px-[7rem] py-[5rem] bg-stone-200">
+            <div class="grid grid-cols-[35%_50%] justify-between">
+                <div>
+                    <h5 class="text-lg font-bold mb-6">About Orbit</h5>
+                    <p class="text-sm font-medium mb-4 text-stone-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corrupti, possimus quibusdam placeat, porro quisquam non, maiores quo numquam tenetur maxime reprehenderit! Tempore voluptas fugiat perferendis maiores laboriosam, fugit dicta!</p>
+                    <h5 class="text-lg font-bold mb-4">Connect</h5>
+                    <div class="flex gap-4 text-2xl">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3">
+                    <div>
+                         <ul>
+                            <caption><p class="font-bold text-lg mb-4">Navagation</p></caption>
+                            <li class="text-sm font-medium text-stone-600"><p class="mb-3">HTML 5</p></li>
+                            <li class="text-sm font-medium text-stone-600"><p class="mb-3">CSS 3</p></li>
+                            <li class="text-sm font-medium text-stone-600"><p class="mb-3">Js</p></li>
+                            <li class="text-sm font-medium text-stone-600"><p class="mb-3">HTML 5</p></li>
+                            
+                         </ul>
+                    </div>
+                    <div>
+                        <ul>
+                           <caption><p class="font-bold text-lg mb-4">Navagation</p></caption>
+                           <li class="text-sm font-medium text-stone-600"><p class="mb-3">HTML 5</p></li>
+                           <li class="text-sm font-medium text-stone-600"><p class="mb-3">CSS 3</p></li>
+                           <li class="text-sm font-medium text-stone-600"><p class="mb-3">Js</p></li>
+                           <li class="text-sm font-medium text-stone-600"><p class="mb-3">HTML 5</p></li>
+                           
+                        </ul>
+                   </div>
+                   <div>
+                    <ul>
+                       <caption><p class="font-bold text-lg mb-4">Contact</p></caption>
+                       <li><i class="fa-solid fa-location-dot"></i> RatnaNagar-3,Tandi</li>
+                       <li><i class="fa-solid fa-phone"></i>=9777 48376378</li>
+                       <li><i class="fa-solid fa-envelope"></i>someone@gmail.com</li>
+                       <li><i class="fa-solid fa-globe"></i> www.flkjfjk</li>
+                    </ul>
+               </div>
+                </div>
+            </div>
+        </section>
     </footer>
 </body>
 <script src="script.js"></script>
