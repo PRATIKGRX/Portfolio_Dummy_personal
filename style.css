@@ -31,12 +31,10 @@
     left: 0%;
 
 }
+
 .nav-icons ul li a:hover{
     color: white;
 
-}
-#smallNav{
-    display: none;
 }
 .fade-in-left {
     opacity: 0;
@@ -217,8 +215,15 @@
     }
 }
 .gallery {
-    column-count: 3;
-    column-gap: 20px;
+    column-count: 2;
+    column-gap: 10px;
+}
+@media (min-width: 600px){
+    .gallery {
+        column-count: 3;
+        column-gap: 20px;
+    }
+    
 }
 
 .gallery img {
